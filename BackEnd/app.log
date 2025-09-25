@@ -1,0 +1,134 @@
+2025-08-10 15:59:31,185 - INFO - GET - Listagem de UFs
+2025-08-10 15:59:31,187 - INFO - UFs retornadas com sucesso
+2025-08-10 16:22:32,902 - INFO - GET ALL- Listagem de instituições
+2025-08-10 16:22:33,251 - INFO - GET ALL- Listagem de UFs
+2025-08-10 16:22:33,255 - INFO - UFs retornadas com sucesso
+2025-08-10 16:55:27,232 - INFO - GET ALL- Listagem de instituições
+2025-08-10 16:55:36,284 - INFO - GET ALL- Listagem de UFs
+2025-08-10 16:55:36,287 - INFO - UFs retornadas com sucesso
+2025-08-10 16:55:41,848 - INFO - GET ALL - Listagem de mesorregiões
+2025-08-10 16:55:41,852 - INFO - Mesorregiões retornadas com sucesso
+2025-08-10 16:56:04,567 - INFO - GET ALL - Listagem de mesorregiões
+2025-08-10 16:56:04,568 - INFO - Mesorregiões retornadas com sucesso
+2025-08-10 16:56:11,553 - INFO - GET ALL - Listagem de mesorregiões
+2025-08-10 16:56:11,555 - INFO - Mesorregiões retornadas com sucesso
+2025-08-10 16:56:14,475 - INFO - GET ALL - Listagem de mesorregiões
+2025-08-10 16:56:14,478 - INFO - Mesorregiões retornadas com sucesso
+2025-08-10 16:56:17,423 - INFO - GET ALL - Listagem de mesorregiões
+2025-08-10 16:56:17,425 - INFO - Mesorregiões retornadas com sucesso
+2025-08-10 16:56:21,825 - INFO - GET ALL - Listagem de mesorregiões
+2025-08-10 16:56:21,828 - INFO - Mesorregiões retornadas com sucesso
+2025-08-10 16:56:23,798 - INFO - GET ALL - Listagem de microrregiões
+2025-08-10 16:56:23,819 - INFO - Microrregiões retornadas com sucesso
+2025-08-10 16:56:54,761 - INFO - GET ALL - Listagem de microrregiões
+2025-08-10 16:56:54,766 - INFO - Microrregiões retornadas com sucesso
+2025-08-10 16:57:00,641 - INFO - GET ALL - Listagem de microrregiões
+2025-08-10 16:57:00,643 - INFO - Microrregiões retornadas com sucesso
+2025-08-10 16:57:03,561 - INFO - GET ALL - Listagem de microrregiões
+2025-08-10 16:57:03,563 - INFO - Microrregiões retornadas com sucesso
+2025-08-10 16:57:07,273 - INFO - GET ALL - Listagem de microrregiões
+2025-08-10 16:57:07,274 - INFO - Microrregiões retornadas com sucesso
+2025-08-10 16:57:10,585 - INFO - GET ALL - Listagem de microrregiões
+2025-08-10 16:57:10,587 - INFO - Microrregiões retornadas com sucesso
+2025-08-10 16:57:13,613 - INFO - GET ALL - Listagem de microrregiões
+2025-08-10 16:57:13,615 - INFO - Microrregiões retornadas com sucesso
+2025-08-11 07:59:52,608 - INFO - GET - Matrículas por estado
+2025-08-11 07:59:53,475 - INFO - GET - Matrículas por estado
+2025-08-11 08:00:34,699 - INFO - GET - Matrículas por estado
+2025-08-11 09:20:00,780 - INFO - GET ALL- Listagem de instituições
+2025-08-11 09:20:06,580 - INFO - GET ALL BY ANO- Instituições do ano 2024
+2025-08-11 10:05:30,226 - INFO - GET ALL- Listagem de instituições
+2025-08-11 10:05:35,277 - INFO - GET ALL BY ANO- Instituições do ano 2023
+2025-08-11 10:05:38,891 - INFO - GET ALL BY ANO- Instituições do ano 2024
+2025-08-11 10:05:45,548 - INFO - GET BY CO_ENTIDADE & ANO- Instituição (11000023, 2024)
+2025-08-11 10:05:48,167 - INFO - GET BY CO_ENTIDADE & ANO- Instituição (11000023, 2023)
+2025-08-11 10:05:52,407 - INFO - GET ALL- Listagem de instituições
+2025-08-11 10:05:55,390 - INFO - GET ALL - Listagem de municípios
+2025-08-11 10:05:55,404 - INFO - Municípios retornados com sucesso
+2025-08-11 10:06:00,258 - INFO - GET ALL - Listagem de microrregiões
+2025-08-11 10:06:00,274 - INFO - Microrregiões retornadas com sucesso
+2025-08-11 10:06:03,468 - INFO - GET ALL - Listagem de mesorregiões
+2025-08-11 10:06:03,475 - INFO - Mesorregiões retornadas com sucesso
+2025-08-11 10:06:09,828 - INFO - GET ALL- Listagem de UFs
+2025-08-11 10:06:09,835 - INFO - UFs retornadas com sucesso
+2025-08-12 09:29:07,213 - INFO - GET ALL- Listagem de instituições
+2025-08-12 09:29:07,259 - ERROR - Erro SQLAlchemy ao buscar instituições:
+	Traceback (most recent call last):
+	  File "/home/davi/Downloads/restful/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1963, in _exec_single_context
+	    self.dialect.do_execute(
+	  File "/home/davi/Downloads/restful/venv/lib/python3.12/site-packages/sqlalchemy/engine/default.py", line 943, in do_execute
+	    cursor.execute(statement, parameters)
+	psycopg2.errors.UndefinedTable: relation "instituicoes" does not exist
+	LINE 2: FROM instituicoes 
+	             ^
+	
+	
+	The above exception was the direct cause of the following exception:
+	
+	Traceback (most recent call last):
+	  File "/home/davi/Downloads/sqlalchemy/resources/InstituicaoResource.py", line 20, in get
+	    instituicoes = db.session.execute(
+	                   ^^^^^^^^^^^^^^^^^^^
+	  File "/home/davi/Downloads/restful/venv/lib/python3.12/site-packages/sqlalchemy/orm/scoping.py", line 779, in execute
+	    return self._proxied.execute(
+	           ^^^^^^^^^^^^^^^^^^^^^^
+	  File "/home/davi/Downloads/restful/venv/lib/python3.12/site-packages/sqlalchemy/orm/session.py", line 2365, in execute
+	    return self._execute_internal(
+	           ^^^^^^^^^^^^^^^^^^^^^^^
+	  File "/home/davi/Downloads/restful/venv/lib/python3.12/site-packages/sqlalchemy/orm/session.py", line 2251, in _execute_internal
+	    result: Result[Any] = compile_state_cls.orm_execute_statement(
+	                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+	  File "/home/davi/Downloads/restful/venv/lib/python3.12/site-packages/sqlalchemy/orm/context.py", line 306, in orm_execute_statement
+	    result = conn.execute(
+	             ^^^^^^^^^^^^^
+	  File "/home/davi/Downloads/restful/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1415, in execute
+	    return meth(
+	           ^^^^^
+	  File "/home/davi/Downloads/restful/venv/lib/python3.12/site-packages/sqlalchemy/sql/elements.py", line 523, in _execute_on_connection
+	    return connection._execute_clauseelement(
+	           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+	  File "/home/davi/Downloads/restful/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1637, in _execute_clauseelement
+	    ret = self._execute_context(
+	          ^^^^^^^^^^^^^^^^^^^^^^
+	  File "/home/davi/Downloads/restful/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1842, in _execute_context
+	    return self._exec_single_context(
+	           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+	  File "/home/davi/Downloads/restful/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1982, in _exec_single_context
+	    self._handle_dbapi_exception(
+	  File "/home/davi/Downloads/restful/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 2351, in _handle_dbapi_exception
+	    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+	  File "/home/davi/Downloads/restful/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1963, in _exec_single_context
+	    self.dialect.do_execute(
+	  File "/home/davi/Downloads/restful/venv/lib/python3.12/site-packages/sqlalchemy/engine/default.py", line 943, in do_execute
+	    cursor.execute(statement, parameters)
+	sqlalchemy.exc.ProgrammingError: (psycopg2.errors.UndefinedTable) relation "instituicoes" does not exist
+	LINE 2: FROM instituicoes 
+	             ^
+	
+	[SQL: SELECT instituicoes."NU_ANO_CENSO", instituicoes."CO_ENTIDADE", instituicoes."NO_REGIAO", instituicoes."CO_REGIAO", instituicoes."NO_UF", instituicoes."SG_UF", instituicoes."CO_UF", instituicoes."NO_MUNICIPIO", instituicoes."CO_MUNICIPIO", instituicoes."CO_MESORREGIAO", instituicoes."CO_MICRORREGIAO", instituicoes."NO_ENTIDADE", instituicoes."QT_MAT_BAS", instituicoes."QT_MAT_EJA", instituicoes."QT_MAT_ESP", instituicoes."QT_MAT_FUND", instituicoes."QT_MAT_INF", instituicoes."QT_MAT_MED", instituicoes."QT_MAT_PROF" 
+	FROM instituicoes 
+	 LIMIT %(param_1)s OFFSET %(param_2)s]
+	[parameters: {'param_1': 10, 'param_2': 0}]
+	(Background on this error at: https://sqlalche.me/e/20/f405)
+	
+2025-08-12 09:34:54,597 - INFO - GET ALL BY ANO- Instituições do ano 2023
+2025-08-12 09:35:01,859 - INFO - GET ALL BY ANO- Instituições do ano 2024
+2025-08-12 09:35:05,899 - INFO - GET ALL- Listagem de instituições
+2025-08-12 09:35:08,516 - INFO - GET ALL- Listagem de UFs
+2025-08-12 09:35:08,525 - INFO - UFs retornadas com sucesso
+2025-08-12 16:07:51,185 - INFO - GET - Matrículas por estado
+2025-08-12 16:07:51,508 - INFO - GET - Matrículas por estado
+2025-08-12 16:08:17,725 - INFO - GET ALL BY ANO- Instituições do ano 2023
+2025-08-12 16:08:20,004 - INFO - GET ALL- Listagem de instituições
+2025-08-12 16:08:25,183 - INFO - GET ALL- Listagem de instituições
+2025-08-12 16:12:19,779 - INFO - GET - Matrículas por estado
+2025-08-12 16:12:20,706 - INFO - GET - Matrículas por estado
+2025-08-13 14:46:27,780 - INFO - GET ALL- Listagem de UFs
+2025-08-13 14:46:27,834 - INFO - UFs retornadas com sucesso
+2025-08-13 14:46:44,118 - INFO - GET BY CO_UF - UF (13)
+2025-09-22 10:38:17,218 - INFO - GET - Matrículas por estado
+2025-09-22 10:38:17,666 - INFO - GET - Matrículas por estado
+2025-09-22 10:38:23,290 - INFO - GET - Matrículas por estado
+2025-09-22 10:38:27,724 - INFO - GET - Matrículas por estado
+2025-09-22 10:38:31,564 - INFO - GET - Matrículas por estado
+2025-09-22 10:38:33,775 - INFO - GET - Matrículas por estado
